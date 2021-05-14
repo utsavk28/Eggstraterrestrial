@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f111d;
+}
+
+/* Egg-Rocket CSS  */
+
+.egg-rocket-div {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+    animation: 6s ease-in-out alternate infinite left-right;
+    z-index: 1;
+}
+
+.egg-rocket {
+    position: relative;
+    width: 275px;
+    height: 196px;
+    background-color: white;
+    border-radius: 0 100px 100px 0;
+    box-shadow: 4px 0 25px white;
+}
+
+.egg-head {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 18px;
+    right: 18px;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-color: #ffdb10;
+    border-left: 10px solid #fcb103;
+    box-shadow: 4px 0 15px #ffdb10;
+}
+
+.eyes {
+    position: relative;
+    left: 40px;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    animation: 3s 1s infinite alternate eyes-closing;
+}
+
+.eyes-2 {
+    margin-left: 40px;
+}
+
+.mouth {
+    position: relative;
+    top: 86px;
+    left: -14px;
+    width: 30px;
+    height: 15px;
+    border-radius: 0 0 15px 15px;
+    background-color: black;
+}
+
+.innermouth {
+    position: absolute;
+    left: 7px;
+    background-color: #ffdb10;
+    width: 16px;
+    height: 8px;
+    border-radius: 0 0 8px 8px;
+    animation: 4s infinite alternate smile;
+}
+
+.chin {
+    position: relative;
+    left: -80px;
+    top: 80px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #ff7e7e;
+}
+
+.chin-2 {
+    position: relative;
+    left: -4px;
+}
+
+.egg-bottom {
+    position: relative;
+    width: 100px;
+}
+
+.strip {
+    position: relative;
+    right: 45px;
+    float: right;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.black {
+    background-color: #0f111d;
+    width: 80px;
+}
+
+.white {
+    background-color: white;
+    width: 100px;
+}
+
+.strip-1 {
+    animation: 0.5s ease-in-out alternate infinite strip-motion-1;
+}
+
+.strip-7 {
+    animation: 0.425s ease-in-out alternate infinite strip-motion-4;
+}
+
+.strip-2 {
+    animation: 0.55s ease-in-out alternate-reverse infinite strip-motion-2;
+}
+
+.strip-6,
+.strip4 {
+    animation: 0.5s ease-in-out alternate-reverse infinite strip-motion-2;
+}
+
+.strip-3 {
+    animation: 0.65s ease-in-out alternate infinite strip-motion-5;
+}
+
+.strip-5 {
+    animation: 0.45s ease-in-out alternate infinite strip-motion-5;
+}
+
+/* Planet Css */
+
+.planet {
+    position: absolute;
+    background-image: linear-gradient(to right, blue, violet);
+    opacity: 0;
+}
+
+.big-planet {
+    top: 10%;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    animation: 3s 0s ease-in infinite zoop-plan;
+}
+
+.medium-planet {
+    top: 30%;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    animation: 3s 0.25s ease-in infinite zoop-plan;
+}
+
+.small-planet {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+.sm-plan-1 {
+    top: 17.5%;
+    animation: 3s 1.25s ease-in infinite zoop-plan;
+}
+
+.sm-plan-2 {
+    top: 48%;
+    animation: 3s 1s ease-in infinite zoop-plan;
+}
+
+.sm-plan-3 {
+    top: 65%;
+    animation: 3s 1.75s ease-in infinite zoop-plan;
+}
+
+.shooting-star {
+    position: absolute;
+    background-image: linear-gradient(to right, blue, violet);
+    height: 1px;
+    width: 100px;
+    border-radius: 0.25px;
+    opacity: 0;
+}
+
+.st-sr-1 {
+    top: 20%;
+    animation: 2s 1.75s ease-in infinite zoop-star;
+}
+.st-sr-2 {
+    top: 33.33%;
+    animation: 2s 0.75s ease-in infinite zoop-star;
+}
+.st-sr-3 {
+    top: 70%;
+    animation: 2s 1s ease-in infinite zoop-star;
+}
+.st-sr-4 {
+    top: 45%;
+    animation: 2s 0s ease-in infinite zoop-star;
+}
+
+/* Power Outlet CSS */
+.power-circle-div {
+    position: relative;
+    top: -196px;
+    left: -50px;
+}
+.power-circle {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 0 14px white;
+}
+
+.pc1 {
+    animation: 3s 2s ease-in infinite power-circle-1;
+}
+
+.pc2 {
+    top: 140px;
+    animation: 3s 1s ease-in infinite power-circle-1;
+}
+
+.pc3 {
+    animation: 3s 3s ease-in infinite power-circle-1;
+}
+
+/* Egg-Rocket-Animation */
+
+@keyframes strip-motion-1 {
+    from {
+        right: 50px;
+    }
+    to {
+        right: 70px;
+    }
+}
+
+@keyframes strip-motion-2 {
+    from {
+        right: 35px;
+        box-shadow: -0.125px 0px 10px #f5f5f5;
+    }
+    to {
+        right: 60px;
+    }
+}
+
+@keyframes strip-motion-3 {
+    from {
+        right: 55px;
+    }
+    to {
+        right: 80px;
+    }
+}
+
+@keyframes strip-motion-4 {
+    from {
+        right: 55px;
+    }
+    to {
+        right: 80px;
+    }
+}
+
+@keyframes strip-motion-5 {
+    from {
+        right: 55px;
+    }
+    to {
+        right: 85px;
+    }
+}
+
+@keyframes left-right {
+    0% {
+        left: 63%;
+        top: 37%;
+        transform: translate(-63%, -37%);
+    }
+    25% {
+        left: 39%;
+        top: 58%;
+        transform: translate(-39%, -58%);
+    }
+    50% {
+        left: 35%;
+        top: 30%;
+        transform: translate(-35%, -30%);
+    }
+    75% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        left: 57%;
+        top: 36%;
+        transform: translate(-57%, -36%);
+    }
+}
+
+@keyframes eyes-closing {
+    30% {
+        transform: rotateX(0deg);
+    }
+    40% {
+        transform: rotateX(180deg);
+    }
+    50% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes smile {
+    29% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    71% {
+        opacity: 1;
+    }
+}
+
+/* Planets & Shooting Star Animation */
+
+@keyframes zoop-plan {
+    0% {
+        right: 0%;
+        opacity: 1;
+    }
+    50% {
+        right: 100%;
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoop-star {
+    0% {
+        right: 0%;
+        width: 100px;
+        opacity: 1;
+    }
+    30% {
+        right: 50%;
+        opacity: 1;
+        width: 500px;
+    }
+    50% {
+        right: 100%;
+        opacity: 1;
+        width: 300px;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Power outlet animation */
+
+@keyframes power-circle-1 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: -100px;
+    }
+    26% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes power-circle-2 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: -150px;
+    }
+    26% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes power-circle-3 {
+    0% {
+        opacity: 1;
+        left: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: -120px;
+    }
+    26% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
